@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #fff8f0;
+    color: #49372d;
+}
+
+/* เมนู */
+nav {
+    background: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.logo {
+    color: #c76c35;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: #654b3b;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e99b59;
+}
+
+/* หน้าปก */
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #ffe3c7, #fff8f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 150px 150px 20px 20px;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px #c76c3550;
+}
+
+.hero h1 {
+    color: #b85f2e;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.hero p {
+    line-height: 2;
+}
+
+/* ปุ่ม */
+.btn {
+    display: inline-block;
+    padding: 13px 30px;
+    margin-top: 20px;
+    background: #c76c35;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #91451f;
+    transform: translateY(-3px);
+}
+
+/* เนื้อหา */
+section {
+    padding: 80px 10%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-size: 32px;
+    color: #bd6735;
+}
+
+.heading p {
+    color: #9d8574;
+}
+
+/* กล่องข้อมูล */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #00000010;
+    line-height: 2;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #c76c3525;
+}
+
+/* จัดเรียงการ์ด */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.grid h3 {
+    color: #bd6735;
+    margin-top: 12px;
+}
+
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ส่วนท้าย */
+footer {
+    background: #a9562e;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    line-height: 2;
+}
+
+/* เอฟเฟกต์ปรากฏ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text {
+    animation: fadeIn 1s ease;
+}
+
+/* รองรับโทรศัพท์ */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero img {
+        width: 220px;
+        height: 280px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .heading h2 {
+        font-size: 26px;
+    }
+}
