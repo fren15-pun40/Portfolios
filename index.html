@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #fff8ef;
+    color: #503c30;
+}
+
+header {
+    background: #b96636;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+nav {
+    background: #fff;
+    padding: 17px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px #0001;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a6532d;
+    margin: 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #e9a15e;
+}
+
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(135deg,#ffe2c5,#fff8ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding: 40px;
+}
+
+.hero img {
+    width: 260px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 130px 130px 20px 20px;
+    border: 7px solid white;
+    box-shadow: 0 8px 25px #b9663650;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #a6532d;
+    margin: 15px 0;
+}
+
+.hero p {
+    line-height: 2;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #b96636;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+section {
+    padding: 65px 9%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    font-size: 30px;
+    color: #b96636;
+}
+
+.heading p {
+    color: #9d8778;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px #00000010;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.grid h3 {
+    color: #b96636;
+}
+
+footer {
+    background: #9e522e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 27px;
+    }
+    nav a {
+        margin: 4px;
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>MY PORTFOLIO</h2>
+    <p>แฟ้มสะสมผลงานเพื่อเข้าศึกษาต่อ</p>
+</header>
+
+<nav>
+    <a href="#home">หน้าหลัก</a>
+    <a href="#about">ประวัติส่วนตัว</a>
+    <a href="#education">การศึกษา</a>
+    <a href="#reason">แรงบันดาลใจ</a>
+    <a href="#activity">กิจกรรม</a>
+    <a href="#certificate">เกียรติบัตร</a>
+</nav>
+
+<!-- หน้าปก -->
+<div class="hero" id="home">
+    <img src="myphoto.jpg" alt="รูปของฉัน">
+
+    <div>
+        <h3>WELCOME TO MY PORTFOLIO</h3>
+        <h1>ธัญวรัตน์ เนียมสุวรรณ</h1>
+        <p>คณะมนุษยศาสตร์และสังคมศาสตร์</p>
+        <p>สาขารัฐประศาสนศาสตร์</p>
+        <p>มหาวิทยาลัยที่ใฝ่ฝัน</p>
+
+        <a href="#about" class="btn">เข้าสู่ Portfolio</a>
+    </div>
+</div>
+
+<!-- ประวัติส่วนตัว -->
+<section id="about">
+    <div class="heading">
+        <h2>ABOUT ME</h2>
+        <p>ประวัติส่วนตัว</p>
+    </div>
+
+    <div class="card">
+        <p>ชื่อ-นามสกุล : ธัญวรัตน์ เนียมสุวรรณ</p>
+        <p>ชื่อเล่น : ต้า</p>
+        <p>อายุ : 18</p>
+        <p>โรงเรียน : ทุ่งใหญ่เฉลิมราชอนุสรณ์ รัชมังคลาภิเษกก</p>
+        <p>งานอดิเรก : เล่นเกม</p>
+        
+        <p>คติประจำใจ : ความสำเร็จเริ่มต้นจากความพยายาม</p>
+    </div>
+</section>
+
+<!-- ประวัติการศึกษา -->
+<section id="education">
+    <div class="heading">
+        <h2>EDUCATION</h2>
+        <p>ประวัติการศึกษา</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>ประถมศึกษา</h3>
+            <p>โรงเรียน วัดขนาน</p>
+        </div>
+
+        <div class="card">
+            <h3>มัธยมศึกษาตอนต้น</h3>
+            <p>โรงเรียน ทุ่งใหญ่เฉลิมราชอนุสรณ์  รัชมังคลาภิเษกก</p>
+        </div>
+
+        <div class="card">
+            <h3>มัธยมศึกษาตอนปลาย</h3>
+            <p>โรงเรียน ทุ่งใหญ่เฉลิมราชอนุสรณ์ รัชมังคลาภิเษกก</p>
+        </div>
+    </div>
+</section>
+
+<!-- เหตุผลที่เลือกเรียน -->
+<section id="reason">
+    <div class="heading">
+        <h2>MY INSPIRATION</h2>
+        <p>เหตุผลที่เลือกศึกษาต่อ</p>
+    </div>
+
+    <div class="card">
+        ดิฉันมีความสนใจในด้านการเมือง การปกครอง
+        และการบริหารงานภาครัฐ มีความตั้งใจที่จะศึกษา
+        เรียนรู้เกี่ยวกับการบริหารจัดการองค์กร
+        การพัฒนาท้องถิ่น และการทำงานเพื่อสังคม
+        ดิฉันหวังว่าจะนำความรู้ที่ได้รับไปพัฒนาตนเอง
+        และเป็นส่วนหนึ่งในการสร้างประโยชน์ให้แก่ประชาชน
+        และประเทศชาติต่อไป
+    </div>
+</section>
+
+<!-- กิจกรรม -->
+<section id="activity">
+    <div class="heading">
+        <h2>ACTIVITIES</h2>
+        <p>กิจกรรมที่เข้าร่วม</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <img src="activity1.jpg" alt="กิจกรรม 1">
+            <h3>กิจกรรมที่ 1</h3>
+            <p>ปลูกป่าชายเลน</p>
+        </div>
+
+        <div class="card">
+            <img src="activity2.jpg" alt="กิจกรรม 2">
+            <h3>กิจกรรมที่ 2</h3>
+            <p>กิจกรรมวันครู</p>
+        </div>
+
+        <div class="card">
+            <img src="activity3.jpg" alt="กิจกรรม 3">
+            <h3>กิจกรรมที่ 3</h3>
+            <p>สตาฟกีฬา</p>
+        </div>
+    </div>
+</section>
+
+<!-- เกียรติบัตร -->
+<section id="certificate">
+    <div class="heading">
+        <h2>CERTIFICATES</h2>
+        <p>ปลูกป่าชายเลน</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <img src="certificate1.jpg" alt="เกียรติบัตร 1">
+            <h3>ปลูกป่าชายเลน</h3>
+        </div>
+
+        <div class="card">
+            <img src="certificate2.jpg" alt="เกียรติบัตร 2">
+            <h3>คนดีศรีท.ฉ.รอ</h3>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>THANK YOU</h2>
+    <p>ขอบคุณที่เข้าชมแฟ้มสะสมผลงาน</p>
+    <p>ชุติวัต พยาบาล</p>
+</footer>
+
+</body>
+</html>
